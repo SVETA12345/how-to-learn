@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -7,6 +12,7 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: black;
 }
 
 .header {
@@ -53,6 +59,7 @@ height: 32px;
   padding-left: 64px;
   align-items: center;
   z-index: 3;
+  margin: 0;
 }
 
 .header__main-illustration{
@@ -62,6 +69,12 @@ height: 32px;
   height: 608px;
   width: 765px;
   z-index: 2;
+  background-size: cover;
+}
+
+.header__link{
+  color:#2f80ed;
+  text-decoration: none;
 }
 
 .header__subtitle{
@@ -73,6 +86,7 @@ height: 32px;
   font-weight: normal;
   left: 64px;
   z-index: 3;
+  margin: 0;
 }
 
 .two-columns{
@@ -93,6 +107,7 @@ height: 32px;
   color:#2f80ed;
   padding-left: 0px;
   margin-top: 0px;
+  margin-bottom: 0;
 }
 
 .two-columns__paragraph{
@@ -109,13 +124,11 @@ height: 32px;
 
 .two-columns__main-text{
   padding-right: 0;
-  flex-direction: column;
   width: 80%;
   min-width: 784px;
 }
 
 .two-columns__span-accent{
-  margin-top:30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
@@ -178,7 +191,7 @@ font-weight: normal;
 
 .feynman{
   margin-top: 100px;
-  height: 890px;
+  min-height: 890px;
   display: flex;
   position: relative;
   justify-content: center;
@@ -216,6 +229,8 @@ font-weight: normal;
   font-size: 36px;
   font-weight: normal;
   z-index: 1;
+  text-decoration: none;
+  color:#2f80ed;
 }
 
 .feynman__main-illustration{
@@ -230,7 +245,7 @@ font-weight: normal;
 .kaufman{
   margin:0;
   flex-direction: column;
-  background-color: #121314;
+  background-color: #1f1f1f;
   padding-bottom: 90px;
   overflow: hidden;
   position: relative;
@@ -301,11 +316,15 @@ font-weight: normal;
  padding-top: 0;
  right: -210px;
  z-index: 0;
+ background-image: url(../images/kaufman-triangle.svg);
+ background-size: cover;
+ background-repeat: no-repeat;
 }
 
 .footer{  
   display: flex;
-  background-color: #121314;
+  background-color:#1f1f1f;
+  min-height: 350px;
 }
 
 .footer__columns{
@@ -316,7 +335,6 @@ font-weight: normal;
   width: 90%;
   justify-content: space-between;
   column-count: 3;
-  min-height: 350px;
   color: white;
 }
 
@@ -359,7 +377,6 @@ font-weight: normal;
 
 .footer__column-links{
   padding: 0;
-  padding-top: 5px;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -384,6 +401,7 @@ font-weight: normal;
 }
 
 .footer__column-heading{
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
