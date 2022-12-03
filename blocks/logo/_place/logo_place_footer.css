@@ -1,0 +1,9 @@
+.logo_place_footer {
+    background: url("../../../images/logo_place_footer.svg");
+    width: 228px;
+    height: 32px;
+    align-items: flex-start;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+  }

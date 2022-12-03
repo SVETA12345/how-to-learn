@@ -1,0 +1,7 @@
+@import url(../logo/_place/logo_place_footer.css);
+.footer {
+    display: flex;
+    background-color: #1f1f1f;
+    min-height: 350px;
+  }
+  

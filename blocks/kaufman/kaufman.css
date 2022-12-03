@@ -1,0 +1,11 @@
+@import url(../blocks/table/table.css);
+@import url(../blocks/.section-title/.section-title.css);
+@import url(../blocks/.section-subtitle/.section-subtitle.css);
+.kaufman {
+    margin: 0;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    padding-bottom: 90px;
+    overflow: hidden;
+    position: relative;
+  }
